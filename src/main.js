@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import Maska from 'maska'
+import { vMaska } from 'maska';
 
 const app = createApp(App)
 
-app.use(Maska)
+app.directive('maska', vMaska);
 app.mount('#app')
